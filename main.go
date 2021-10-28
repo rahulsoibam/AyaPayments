@@ -90,6 +90,10 @@ func (source *Square) ShortestPathToASquare(target *Square) (string, error) {
 
 		// Check if the current square is the target
 		if current.posX == target.posX && current.posY == target.posY {
+			// Free the queue
+			for e := queue.Front(); e != nil; e = e.Next() {
+				queue.Remove(e)
+			}
 			return current.path, nil
 		}
 
