@@ -120,12 +120,6 @@ func (source *Square) ShortestPathToASquare(target *Square) (string, error) {
 }
 
 func main() {
-	// square, err := InitSquareFromAlgebraicNotation("A8")
-	// if err != nil {
-	// 	log.Println(err)
-	// }
-	// fmt.Println(square)
-
 	var sourceInputString string
 	var targetInputString string
 	fmt.Println("Enter the source and target squares in algebraic notation")
