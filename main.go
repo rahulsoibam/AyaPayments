@@ -142,5 +142,17 @@ func main() {
 
 	path, err := source.ShortestPathToASquare(target)
 	fmt.Println(path)
-
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
+	fmt.Println("This is for demo purposes")
 }
