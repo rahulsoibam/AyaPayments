@@ -67,25 +67,4 @@ func TestShortestPathToASquare(t *testing.T) {
 		t.Errorf("Incorrect path. Expected %q got %q", expected2, path2)
 		t.Error("If the solution is valid, change the direction matrix in main.go or update test")
 	}
-
-	source3, err := InitSquareFromAlgebraicNotation("A8")
-	if err != nil {
-		t.Errorf("%v", err)
-	}
-	target3, err := InitSquareFromAlgebraicNotation("A8")
-	if err != nil {
-		t.Errorf("%v", err)
-	}
-
-	path3, err := source3.ShortestPathToASquare(target3)
-	if err != nil {
-		t.Errorf("%v", err)
-	}
-	// Expected output will change based on the dx and dy arrays in main.go. Update accordingly.
-	// Too many possible paths, not practical to list them all.
-	expected3 := ""
-	if path3 != expected3 {
-		t.Errorf("Incorrect path. Expected %q got %q", expected3, path3)
-		t.Error("If the solution is valid, change the direction matrix in main.go or update test")
-	}
 }

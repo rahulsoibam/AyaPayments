@@ -132,15 +132,8 @@ func main() {
 		log.Println(err)
 	}
 	_, err = fmt.Scan(&targetInputString)
-	if err != nil {
-		log.Println(err)
-	}
 
 	source, err := InitSquareFromAlgebraicNotation(sourceInputString)
-	if err != nil {
-		log.Println(err)
-		return
-	}
 	target, err := InitSquareFromAlgebraicNotation(targetInputString)
 	if err != nil {
 		log.Println(err)
@@ -148,10 +141,6 @@ func main() {
 	}
 
 	path, err := source.ShortestPathToASquare(target)
-	if err != nil {
-		log.Println(err)
-		return
-	}
 	fmt.Println(path)
 
 }
